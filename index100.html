@@ -3,68 +3,169 @@
 
 <head>
     <meta charset="utf-8" />
+
     <title></title>
 
 </head>
 
 <body>
-    <script>  class Manager {
-            constructor(name, surname, age, rate, days) {
-                this._name = name;
-                this._surname = surname;
-                this._age = age;
-                this._rate = rate;
-                this._days = days;
+    <script>
+        function sum() {
+            class Manager {
+                constructor(name, surname, age, rate, days) {
+                    this._name = name;
+                    this._surname = surname;
+                    this._age = age;
+                    this._rate = rate;
+                    this._days = days;
+                }
+                getName() {
+                    return this._name;
+                }
+                setName(value) {
+                    this._name = value;
+                }
+                getSurname() {
+                    return this._surname;
+                }
+                setSurname(value) {
+                    this._surname = value;
+                }
+                getAge() {
+                    return this._age;
+                }
+                setAge(value) {
+                    this._age = value;
+                }
+                getRate() {
+                    return this._rate;
+                }
+                setRate(value) {
+                    this._rate = value;
+                }
+                getDays() {
+                    return this._days;
+                }
+                setDays(value) {
+                    this._days = value;
+                }
+                getSalary() {
+                    return this._days * this._rate;
+                }
+
             }
-            getName() {
-                return this._name;
-            }
-            setName(value) {
-                this._name = value;
-            }
-            getSurname() {
-                return this._surname;
-            }
-            setSurname(value) {
-                this._surname = value;
-            }
-            getAge() {
-                return this._age;
-            }
-            setAge(value) {
-                this._age = value;
-            }
-            getRate() {
-                return this._rate;
-            }
-            setRate(value) {
-                this._rate = value;
-            }
-            getDays() {
-                return this._days;
-            }
-            setDays(value) {
-                this._days = value;
-            }
-            getSalary() {
-                return this._days * this._rate;
-            }
+            var manager1 = new Manager("Александр", "Хатьков", 23, 39, 21);
+            var manager2 = new Manager("Дмитрий", "Курленко", 38, 40, 21);
+            var manager3 = new Manager("Дмитрий", "Делендик", 45, 45, 21);
+            var manager4 = new Manager("Екатерина", "Войцеховская", 27, 41, 21);
+            var manager5 = new Manager("Евгений", "Купец", 29, 45, 21);
+
+            document.write("<table  cellspacing=\"0\" cellpadding=\"0\"align =\"center\">")
+
+            document.write("<th>&nbsp</th><tr>");
+            document.write("<td> Имя Менеджера1: " + "<td align=right>" + (manager1.getName()) + "</td></td>")
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Фамилия Менеджера1: " + "<td align=right>" + manager1.getSurname() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Возраст Менеджера1: " + "<td align=right>" + manager1.getAge() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Дневной Зароботок Менеджера1: " + "<td align=right>" + manager1.getRate() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Отработанные Дни Менеджера1: " + "<td align=right>" + manager1.getDays() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Зарплата Дни Менеджера1: " + "<td align=right>" + manager1.getSalary() + "</td></td>");
+            document.write("</tr>")
+
+            document.write("<th>&nbsp</th><tr>");
+            document.write("<td> Имя Менеджера2: " + "<td align=right>" + (manager2.getName()) + "</td></td>")
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Фамилия Менеджера2: " + "<td align=right>" + manager2.getSurname() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Возраст Менеджера2: " + "<td align=right>" + manager2.getAge() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Дневной Зароботок Менеджера2: " + "<td align=right>" + manager2.getRate() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Отработанные Дни Менеджера2: " + "<td align=right>" + manager2.getDays() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Зарплата Дни Менеджера2: " + "<td align=right>" + manager2.getSalary() + "</td></td>");
+            document.write("</tr>")
+
+            document.write("<th>&nbsp</th><tr>");
+            document.write("<td> Имя Менеджера3: " + "<td align=right>" + (manager3.getName()) + "</td></td>")
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Фамилия Менеджера3: " + "<td align=right>" + manager3.getSurname() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Возраст Менеджера3: " + "<td align=right>" + manager3.getAge() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Дневной Зароботок Менеджера3: " + "<td align=right>" + manager3.getRate() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Отработанные Дни Менеджера3: " + "<td align=right>" + manager3.getDays() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Зарплата Дни Менеджера3: " + "<td align=right>" + manager3.getSalary() + "</td></td>");
+            document.write("</tr>")
+
+            document.write("<th>&nbsp</th><tr>");
+            document.write("<td> Имя Менеджера4: " + "<td align=right>" + (manager4.getName()) + "</td></td>")
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Фамилия Менеджера4: " + "<td align=right>" + manager4.getSurname() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Возраст Менеджера4: " + "<td align=right>" + manager4.getAge() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Дневной Зароботок Менеджера4: " + "<td align=right>" + manager4.getRate() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Отработанные Дни Менеджера4: " + "<td align=right>" + manager4.getDays() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Зарплата Дни Менеджера4: " + "<td align=right>" + manager4.getSalary() + "</td></td>");
+            document.write("</tr>")
+
+            document.write("<th>&nbsp</th><tr>");
+            document.write("<td> Имя Менеджера5: " + "<td align=right>" + (manager5.getName()) + "</td></td>")
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Фамилия Менеджера5: " + "<td align=right>" + manager5.getSurname() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Возраст Менеджера5: " + "<td align=right>" + manager5.getAge() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Дневной Зароботок Менеджера5: " + "<td align=right>" + manager5.getRate() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Отработанные Дни Менеджера5: " + "<td align=right>" + manager5.getDays() + "</td></td>");
+            document.write("</tr>")
+            document.write("<tr>");
+            document.write("<td> Зарплата Дни Менеджера5: " + "<td align=right>" + manager5.getSalary() + "</td></td>");
+            document.write("</tr>")
+
+            document.write("<th>&nbsp</th><tr>");
+            document.write("<td> Сумма Зарплат Всех Сотрудников: " + "<td align=right>" + + (manager1.getSalary() + manager2.getSalary() + + manager3.getSalary() + manager4.getSalary() + manager5.getSalary()) + "</td></td>");
+            document.write("</tr>")
+            document.write("</table>")
 
         }
-        var manager1 = new Manager("Александр", "Хатьков", 23, 39, 21);
-        var manager2 = new Manager("Дмитрий", "Курленко", 38, 40, 21);
-        var manager3 = new Manager("Дмитрий", "Делендик", 45, 45, 21);
-        var manager4 = new Manager("Екатерина", "Войцеховская", 27, 41, 21);
-        var manager5 = new Manager("Евгений", "Купец", 29, 45, 21);
-
-        alert("Имя Менеджера2:\n" + manager2.getName());
-        alert("Фамилия Менеджера2:\n" + manager2.getSurname());
-        alert("Возраст Менеджера2:\n" + manager2.getAge());
-        alert("Дневной Зароботок Менеджера2:\n" + manager2.getRate());
-        alert("Отработанные Дни Менеджера2:\n" + manager2.getDays());
-        alert("Зарплата Менеджера2:\n" + manager2.getSalary());
-        alert("Сумма Зарплат Всех Сотрудников:\n" + (manager1.getSalary() + manager2.getSalary() + + manager3.getSalary() + manager4.getSalary() + manager5.getSalary()));
     </script>
+    <input type="button" onclick="sum()" value="Получить список Всех Сотрудников">
+
 </body>
 
 </html>
