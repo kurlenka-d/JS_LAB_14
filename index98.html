@@ -6,7 +6,8 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>jQuery фильтры</title>
+    <title>Таблица Умножения
+    </title>
 
 </head>
 
@@ -14,14 +15,24 @@
 
     <script>
 
-        document.write("<table  cellspacing=\"1\" cellpadding=\"10\"align =\"center\">")
+        document.write("<table  cellspacing=\"0\" cellpadding=\"0\"align =\"center\">")
 
         for (var i = 1; i <= 10; i++) {
             document.write("<tr>");
-            for (var j = 2; j < 10; j++) { document.write("<td>" + j + "*" + i + "=" + (i * j) + "</td>") }
+            for (var j = 2; j < 6; j++) { document.write("<td>&nbsp;" + j + " &nbsp;" + "x &nbsp;&nbsp;&nbsp;" + "<td align =right>" + i + " = &nbsp;" + "<td align=right>" + (i * j) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t</td>" + "</td>") }
             document.write("</tr>")
         }
+        document.write("<th>&nbsp</th></table>")
+        document.write("<table  cellspacing=\"0\" cellpadding=\"0\"align =\"center\"><th>&nbsp</th>")
+
+        for (var i = 1; i <= 10; i++) {
+            document.write("<tr>");
+            for (var j = 6; j < 10; j++) { document.write("<td>&nbsp;" + j + " &nbsp;" + "x &nbsp;&nbsp;&nbsp;" + "<td align =right>" + i + " = &nbsp;" + "<td align=right>" + (i * j) + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t</td>" + "</td>") }
+            document.write("</tr> ")
+        }
+
         document.write("</table>")
+
 
     </script>
 
